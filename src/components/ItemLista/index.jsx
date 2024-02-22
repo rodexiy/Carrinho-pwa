@@ -10,7 +10,7 @@ function ItemLista(props){
         <div className='itemListaDiv'>
             <p>{props.nome}</p>
             <p>{props.quantidade}</p>
-            <img className='lixeira' src='./public/lixeira.png' onClick={handleClick}/>
+            <img className='lixeira' src='./lixeira.png' onClick={handleClick}/>
         </div>
     )
 }
