@@ -19,16 +19,18 @@ const RUNTIME = 'runtime';
 
 // A list of local resources we always want to be cached.
 const PRECACHE_URLS = [
-  'index.html',
-  'index.css',
-  'App.jsx',
-  'AppPWA.jsx',
-  'App.css',
-  'main.jsx',
-  'components/ItemLista/index.jsx',
-  'components/ItemLista/ItemLista.css',
-
-
+  '/',
+  '/index.html',
+  '/index.css',
+  '/App.jsx',
+  '/AppPWA.jsx',
+  '/App.css',
+  '/main.jsx',
+  '/components/ItemLista/index.jsx',
+  '/components/ItemLista/ItemLista.css',
+  '192x192.png',
+  '512x512.png',
+  'lixeira.png',
 ]
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener('install', event => {
