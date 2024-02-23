@@ -8,7 +8,7 @@ function ItemLista(props){
     }
     return (
         <div className='itemListaDiv'>
-            <p>{props.nome}</p>
+            <p className="nomeItemLista">{props.nome}</p>
             <p>{props.quantidade}</p>
             <img className='lixeira' src='./lixeira.png' onClick={handleClick}/>
         </div>

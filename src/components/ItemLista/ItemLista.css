@@ -12,3 +12,9 @@
 .lixeira{
     width: 32px;
 }
+
+.nomeItemLista{
+    width: 50%;
+    inline-size: 150px;
+    overflow-wrap: break-word;
+}

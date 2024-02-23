@@ -50,10 +50,10 @@ function AppPWA() {
         <div>
           <h1> Minha lista com PWA</h1>
   
-          <div>
+          <div className="divDivInputs">
             <div className='divInputs'>
-              <p>Nome: </p> <input type="text" onChange={handleNomeChange}></input>
-              <p>Quantidade: </p> <input type="number" onChange={handleQuantidadeChange}></input>
+            <div className='divPInput'> <p>Nome: </p> <input type="text" onChange={handleNomeChange}></input></div>
+              <div className='divPInput'> <p>Quantidade: </p> <input type="number" onChange={handleQuantidadeChange}></input></div>
             </div>
   
               <button onClick={adicionarNaLista}>
