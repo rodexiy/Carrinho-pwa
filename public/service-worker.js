@@ -7,7 +7,7 @@ let assets = [
   "/lixeira.png",
   "/manifest.json",
   "/service-worker.js",
-  "/src/index.jsx",
+  "./src/index.jsx",
 ]
 
 self.addEventListener('install', event => {
