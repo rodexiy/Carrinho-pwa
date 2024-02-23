@@ -1,7 +1,8 @@
 let cachePwa = "cachePwa-v1"
 
 let assets = [
-  "/public/192x192.png",
+  "/",
+  "/192x192.png",
 ]
 
 self.addEventListener('install', event => {
