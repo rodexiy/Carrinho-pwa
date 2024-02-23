@@ -9,6 +9,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 )
-
-console.log("aa")
-serviceWorkerRegistration.register()
