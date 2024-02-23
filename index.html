@@ -7,25 +7,13 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="manifest" href="/manifest.json" />
-  <title>Vite + React</title>
+  <title>Lista de compras</title>
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="/src/index.jsx"></script>
 
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker
-        .register('/service-worker.js')
-        .then(serviceWorker => {
-          console.log('Service Worker registered: ' + serviceWorker);
-        })
-        .catch(error => {
-          console.log('Error registering the Service Worker: ' + error);
-        });
-      }
-  </script>
 </body>
 
 </html>
