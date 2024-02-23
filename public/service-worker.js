@@ -1,9 +1,6 @@
 let cachePwa = "cachePwa-v1"
 
 let assets = [
-  "/",
-  "/192x192.png",
-  "/512x512.png",
   "/lixeira.png",
   "/manifest.json",
   "/service-worker.js",
