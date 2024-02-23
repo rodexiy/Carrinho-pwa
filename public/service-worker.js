@@ -1,4 +1,4 @@
-let cachePwa = "cachePwa-v1"
+let cachePwa = "cachePwa-v3"
 
 let assets = [
   "/",
@@ -21,8 +21,10 @@ let assets = [
   "/.eslintrc.cjs",
 ]
 
+
 self.addEventListener('install', event => {
   console.log('Service Worker installing.');
+  console.log(caches.open(cachePwa))
   event.waitUntil(
 
     caches.open(cachePwa).then(function (cache) {
@@ -60,7 +62,7 @@ addEventListener('fetch', function(event) {
         } else {
           return fetch(event.request)     //fetch from internet
             .then(function(res) {
-              return caches.open(assets)
+              return caches.open(cachePwa)
                 .then(function(cache) {
                   cache.put(event.request.url, res.clone());    //save the response for future
                   return res;   // return the fetched data
