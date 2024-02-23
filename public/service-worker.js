@@ -1,21 +1,7 @@
 let cachePwa = "cachePwa-v1"
 
 let assets = [
-  "/lixeira.png",
-  "/manifest.json",
-  "/service-worker.js",
-  "/src/components/index.jsx",
-  "/src/components/ItemLista.css",
-  "/src/App.css",
-  "/src/App.jsx",
-  "/src/AppPWA.jsx",
-  "/src/index.jsx",
-  "/src/index.css",
-  "/.eslintrc.cjs",
   "/index.html",
-  "/package-lock.json",
-  "/package.json",
-  "/vite.config.js",
 ]
 
 self.addEventListener('install', event => {
