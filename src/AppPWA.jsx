@@ -1,6 +1,12 @@
 import './App.css'
 import { useEffect, useState } from 'react'
 import ItemLista from './components/ItemLista';
+import OpenAI from 'openai';
+
+const openai = new OpenAI({
+  apiKey: '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', // This is the default and can be omitted
+  dangerouslyAllowBrowser: true
+});
 
 
 function AppPWA() {
@@ -13,6 +19,20 @@ function AppPWA() {
     const [nomeLista, setNomeLista] = useState("");
     const [quantidadeLista, setQuantidadeLista] = useState(0);
   
+    const generateText = async () => {
+
+        const chatCompletion = await openai.chat.completions.create({
+          messages: [{ role: 'user', content: nomeLista }],
+          model: 'gpt-3.5-turbo',
+        });
+
+        console.log(chatCompletion)
+        setNomeLista(completion.choices[0].message);
+        setQuantidadeLista(1);
+        adicionarNaLista()
+  
+    };
+
     const handleNomeChange = (event) => {
       setNomeLista(event.target.value)
     }
@@ -58,6 +78,10 @@ function AppPWA() {
   
               <button onClick={adicionarNaLista}>
                 Adicionar na lista
+            </button>    
+
+            <button onClick={generateText}>
+                GPT
             </button>    
           </div>
   
